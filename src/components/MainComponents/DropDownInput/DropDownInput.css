@@ -1,0 +1,22 @@
+.task_main_container {
+    border-radius: 5px;
+    background: #FFF;
+    padding: 7px 8px;
+    margin: 15px 0px;
+}
+
+.dropdown_input {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.dropdown_list {
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: #FFF;
+    margin: 15px 0px;
+}

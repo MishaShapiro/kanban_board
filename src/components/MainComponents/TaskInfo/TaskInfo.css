@@ -1,0 +1,38 @@
+.task_info {
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 22px 26px;
+    padding: 22px 28px;
+
+    color: #000;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.task_name {
+    font-size: 24px;
+}
+
+.task_description {
+    font-size: 18px;
+}
+
+.cross_btn {
+    background-color: #0000;
+    border: 0px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.cross_btn:hover {
+    cursor: pointer;
+}

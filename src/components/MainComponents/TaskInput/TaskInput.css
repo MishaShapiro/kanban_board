@@ -1,0 +1,13 @@
+.input {
+    color: #000;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    border: 0px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}

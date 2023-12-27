@@ -1,0 +1,16 @@
+.dropdown_element {
+    padding: 7px;
+    list-style-type: none;
+}
+
+.dropdown_element:hover {
+    cursor: pointer;
+}
+
+.dropdown_element:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown_element:nth-child(even) {
+    background-color: #DEDEDE;
+}

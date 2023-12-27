@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 17px 21px;
+    background: #0067A3;
+
+    color: #FFF;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.counter {
+    display: flex;
+}
+
+.active_task {
+    margin-right: 36px;
+}
