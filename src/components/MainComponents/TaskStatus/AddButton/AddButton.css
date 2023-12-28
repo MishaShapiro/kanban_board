@@ -1,0 +1,19 @@
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #5E6C84;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button::before {
+    content: url("../../../../svg/plus.svg");
+    height: 16px;
+}

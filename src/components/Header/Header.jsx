@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./Header.css"
 import user_avatar from "../../svg/user-avatar.svg"
 import arrow_up from "../../svg/arrow-up.svg"
+import arrow_down from "../../svg/arrow-down.svg"
 
 const Header = function () {
     const [isOpen, setOpen] = useState(false)
@@ -14,7 +15,7 @@ const Header = function () {
             <div className="user_logo">
                 <img src={user_avatar} alt="user-avatar.svg" />
                 <button className="user_logo_btn" onClick={changeOpen}>
-                    <img src={arrow_up} alt="arrow-up.svg" />
+                    <img src={isOpen ? arrow_down : arrow_up} alt="arrow-up.svg" />
                 </button>
                 {isOpen ? 
                 <div className="dropdown_header">

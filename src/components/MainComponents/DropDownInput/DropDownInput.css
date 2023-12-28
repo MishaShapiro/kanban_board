@@ -8,7 +8,12 @@
 .dropdown_input {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    overflow: visible;
+}
+
+.dropdown_input:hover {
+    cursor: pointer;
 }
 
 .dropdown_list {

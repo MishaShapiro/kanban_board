@@ -1,8 +1,8 @@
 import "./TaskInput.css"
 
-const TaskInput = function() {
+const TaskInput = function({setInputValue}) {
     return (
-        <input className="input" type="text" placeholder="Add new"/>
+        <input onChange={(e) => {setInputValue(e.target.value)}} className="input" type="text" placeholder="Add new"/>
     )
 }
 

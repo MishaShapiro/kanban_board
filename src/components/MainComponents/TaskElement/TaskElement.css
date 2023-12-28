@@ -3,4 +3,12 @@
     background: #FFF;
     padding: 7px 8px;
     margin: 15px 0px;
+
+    max-width: 282px;
+
+    overflow-x: hidden;
+}
+
+.task_main_container:hover {
+    cursor: pointer
 }

@@ -1,8 +1,8 @@
 import "./DropDownElement.css"
 
-const DropDownElement = function({element}) {
+const DropDownElement = function({element, clickFunc}) {
     return (
-        <li className="dropdown_element">{element}</li>
+        <li onClick={clickFunc} className="dropdown_element">{element}</li>
     )
 }
 

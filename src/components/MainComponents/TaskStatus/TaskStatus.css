@@ -10,49 +10,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    min-width: 200px;
+
+    height: fit-content;
+    max-height: 90%;
+}
+
+.task_status_overflow {
+    overflow-y: scroll;
 }
 
 .task_name {
     font-size: 24px;
-}
-
-.button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: #5E6C84;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.button:hover {
-    cursor: pointer;
-}
-
-.button::before {
-    content: url("../../../svg/plus.svg");
-    height: 16px;
-}
-
-.submit_button {
-    color: #FFF;
-
-    text-align: center;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    border: 0px;
-    border-radius: 5px;
-    background: #0079BF;
-
-    padding: 4px 9px;
-}
-
-.submit_button:hover {
-    cursor: pointer;
 }

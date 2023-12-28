@@ -1,4 +1,10 @@
 .main {
     background: #0079BF;
     padding: 19px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    height: 82.45%;
 }

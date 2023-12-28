@@ -1,0 +1,29 @@
+.submit_button {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border: 0px;
+    border-radius: 5px;
+    background: #0079BF;
+
+    padding: 4px 9px;
+    margin: 5px 0px;
+}
+
+.submit_button:hover {
+    cursor: pointer;
+}
+
+.submit_button_disabled {
+    background: #6e7174;
+}
+
+.submit_button_disabled:hover {
+    cursor: default;
+}

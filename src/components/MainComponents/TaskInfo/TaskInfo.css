@@ -1,3 +1,14 @@
+.main {
+    background: #0079BF;
+    padding: 19px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    height: 82.45%;
+}
+
 .task_info {
     background-color: #FFF;
     border-radius: 5px;
@@ -15,6 +26,8 @@
     flex-direction: column;
     gap: 10px;
     position: relative;
+
+    width: 100%;
 }
 
 .task_name {
@@ -23,6 +36,8 @@
 
 .task_description {
     font-size: 18px;
+    height: 100%;
+    border: 0px;
 }
 
 .cross_btn {

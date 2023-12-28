@@ -1,18 +1,33 @@
 import "./TaskInfo.css"
 import cross from "../../../svg/cross.svg"
+import { useNavigate } from "react-router-dom"
 
-const TaskInfo = function () {
+const TaskInfo = function ({status, item, data, setData}) {
+    const navigate = useNavigate()
     return (
-        <div className="task_info">
-            <div className="task_name">
-                Main page – performance issues
+        <main className="main">
+            <div className="task_info">
+                <div className="task_name">
+                    {item.title}
+                </div>
+                <textarea className="task_description" onChange={(e) => {
+                    data[status] = data[status].filter((element) => {
+                        return element.id != item.id
+                    })
+                    item.description = e.target.value
+                    data[status].push(item)
+                    const newData = data
+                    setData(newData)
+                    localStorage.setItem("localdata", JSON.stringify(newData))
+                }}>
+                    {item.description}
+                </textarea>
+                <button className="cross_btn" onClick={() => {navigate("/")}}>
+                    <img className="cross" src={cross} alt="cross.svg" />
+                </button>
             </div>
-            <div className="task_description">
-                Это был темный лес, издали казавшийся непроходимым. Там Пахапиль охотился, глушил рыбу, спал на еловых ветках. Короче – жил, пока русские не выгнали оккупантов. А когда немцы ушли, Пахапиль вернулся. Он появился в Раквере, где советский капитан наградил его медалью. Медаль была украшена четырьмя непонятными словами, фигурой и восклицательным знаком.
-            </div>
-            <button className="cross_btn">
-                <img className="cross" src={cross} alt="cross.svg" />
-            </button>
-        </div>
+        </main>
     )
 }
+
+export default TaskInfo
